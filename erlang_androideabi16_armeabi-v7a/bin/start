@@ -2,7 +2,7 @@
 #
 # %CopyrightBegin%
 #
-# Copyright Ericsson AB 1996-2016. All Rights Reserved.
+# Copyright Ericsson AB 1996-2020. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,13 +25,18 @@
 #
 # Usage: start [Data]
 #
-ROOTDIR=/data/data/your.package.name/files/erlang
+if [ -z "$ERL_ROOTDIR" ]
+then
+    ROOTDIR="/data/data/your.package.name/files/erlang"
+else
+    ROOTDIR="$ERL_ROOTDIR"
+fi
 
 if [ -z "$RELDIR" ]
 then
-   RELDIR=$ROOTDIR/releases
+    RELDIR=$ROOTDIR/releases
 fi
 
 START_ERL_DATA=${1:-$RELDIR/start_erl.data}
 
-$ROOTDIR/bin/run_erl -daemon /tmp/ $ROOTDIR/log "exec $ROOTDIR/bin/start_erl $ROOTDIR $RELDIR $START_ERL_DATA" 
+$ROOTDIR/bin/run_erl -daemon /tmp/ $ROOTDIR/log "exec $ROOTDIR/bin/start_erl $ROOTDIR $RELDIR $START_ERL_DATA"
