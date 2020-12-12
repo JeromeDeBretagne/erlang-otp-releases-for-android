@@ -17,14 +17,17 @@ jinterface-1.11
 debugger-5.0
 reltool-0.8
 mnesia-4.18
+crypto-4.8
 os_mon-2.6.1
 syntax_tools-2.3.1
 public_key-1.9.1
+ssl-10.1
 observer-2.9.5
 diameter-2.2.3
 et-1.6.4
 megaco-3.19.3
 eunit-2.6
+ssh-4.10.5
 eldap-1.2.8
 dialyzer-4.2.1
 hipe-4.0.1
