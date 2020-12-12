@@ -24,7 +24,7 @@ then
 else
     ROOTDIR="$ERL_ROOTDIR"
 fi
-BINDIR=$ROOTDIR/erts-11.0.2/bin
+BINDIR=$ROOTDIR/erts-11.1.3/bin
 EMU=beam
 PROGNAME=erl
 export EMU
