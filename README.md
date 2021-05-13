@@ -13,7 +13,8 @@ additional steps:
     $ # For Erlang 23, apply the following patch from the root of the
     $ # source directory to support the ERL_ROOTDIR environment variable,
     $ # as supported upstream now with commits 28f2cc2 and 5475a9e.
-    $ patch -p 1 < /path/to/support_erl_rootdir_env.patch
+    $ # patch -p 1 < /path/to/support_erl_rootdir_env.patch
+    $ # This step is not needed anymore starting with Erlang 24.
 
 
     $ # Follow the regular build and release instructions then.
