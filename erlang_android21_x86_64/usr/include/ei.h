@@ -1,7 +1,7 @@
 /*
  * %CopyrightBegin%
  *
- * Copyright Ericsson AB 1998-2020. All Rights Reserved.
+ * Copyright Ericsson AB 1998-2021. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -397,20 +397,20 @@ typedef struct ei_x_buff_TAG {
 /* Handle the connection */
 
 int ei_connect_init(ei_cnode* ec, const char* this_node_name,
-		    const char *cookie, short creation);
+		    const char *cookie, unsigned int creation);
 int ei_connect_xinit (ei_cnode* ec, const char *thishostname,
 		      const char *thisalivename, const char *thisnodename,
 		      Erl_IpAddr thisipaddr, const char *cookie,
-		      const short creation);
+		      unsigned int creation);
 
 int ei_connect_init_ussi(ei_cnode* ec, const char* this_node_name,
-                         const char *cookie, short creation,
+                         const char *cookie, unsigned int creation,
                          ei_socket_callbacks *cbs, int cbs_sz,
                          void *setup_context);
 int ei_connect_xinit_ussi(ei_cnode* ec, const char *thishostname,
                           const char *thisalivename, const char *thisnodename,
                           Erl_IpAddr thisipaddr, const char *cookie,
-                          const short creation, ei_socket_callbacks *cbs,
+                          unsigned int creation, ei_socket_callbacks *cbs,
                           int cbs_sz, void *setup_context);
 
 int ei_connect(ei_cnode* ec, char *nodename);

@@ -1,7 +1,7 @@
 %%
 %% %CopyrightBegin%
 %% 
-%% Copyright Ericsson AB 2000-2017. All Rights Reserved.
+%% Copyright Ericsson AB 2000-2021. All Rights Reserved.
 %% 
 %% Licensed under the Apache License, Version 2.0 (the "License");
 %% you may not use this file except in compliance with the License.
@@ -55,7 +55,7 @@
          first_event,          % Key of first event (regardless of visibility)
          last_event,           % Key of last event (regardless of visibility)
          events_per_page,      % Maximum number of shown events
-         events,               % Queue containg all event keys (regardless of visibility)
+         events,               % Queue containing all event keys (regardless of visibility)
 	 n_events,             % Number of events available in the collector
          max_actors,           % Maximum number of shown actors
          actors,               % List of known actors

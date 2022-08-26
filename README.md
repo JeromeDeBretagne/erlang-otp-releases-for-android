@@ -4,7 +4,7 @@ This repository contains Erlang/OTP releases built for Android using the
 official instructions found in HOWTO/INSTALL-ANDROID.md with the following
 additional steps:
 
-    $ # At first, set the determnistic option to get builds as reproducible
+    $ # At first, set the deterministic option to get builds as reproducible
     $ # as possible. It will remove most references to absolute paths.
     $
     $ export ERL_COMPILER_OPTIONS=deterministic
@@ -21,7 +21,9 @@ additional steps:
 
 
     $ # Edit the erl.src and start_erl.src scripts in the build directory
-    $ # to remove the usage of the `sed` command in the PROGNAME variable.
+    $ # to remove the usage of the `sed` or `basename` commands in the
+    $ # PROGNAME variable to keep compatibility with Android versions
+    $ # older than Android 6.0 Marshmallow.
 
 
     $ # When running the final `Install` script, the following generic
