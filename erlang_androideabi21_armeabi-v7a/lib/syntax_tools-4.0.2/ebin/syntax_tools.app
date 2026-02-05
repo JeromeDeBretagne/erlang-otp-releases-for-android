@@ -1,0 +1,26 @@
+% This is an -*- erlang -*- file.
+% %CopyrightBegin%
+%
+% SPDX-License-Identifier: Apache-2.0 OR LGPL-2.1-or-later
+%
+% Copyright Ericsson AB 2004-2025. All Rights Reserved.
+%
+% %CopyrightEnd%
+
+{application, syntax_tools,
+ [{description, "Syntax tools"},
+  {vsn, "4.0.2"},
+  {modules, [epp_dodger,
+	     erl_comment_scan,
+	     erl_prettypr,
+	     erl_recomment,
+	     erl_syntax,
+	     erl_syntax_lib,
+             merl,
+             merl_transform,
+	     prettypr]},
+  {registered,[]},
+  {applications, [stdlib]},
+  {env, []},
+  {runtime_dependencies,
+   ["compiler-9.0","erts-16.0","kernel-10.3","stdlib-7.0"]}]}.

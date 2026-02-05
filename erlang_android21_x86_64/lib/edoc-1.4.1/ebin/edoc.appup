@@ -1,0 +1,12 @@
+%% -*- erlang -*-
+%% %CopyrightBegin%
+%%
+%% SPDX-License-Identifier: Apache-2.0 OR LGPL-2.1-or-later
+%%
+%% Copyright Ericsson AB 2014-2025. All Rights Reserved.
+%%
+%% %CopyrightEnd%
+{"1.4.1",
+ [{<<".*">>,[{restart_application, edoc}]}],
+ [{<<".*">>,[{restart_application, edoc}]}]
+}.
